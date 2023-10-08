@@ -1,0 +1,41 @@
+@use "sass:math";
+
+$font-stack: Inter, sans-serif;
+$primary-color: #333;
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-stack;
+    color: $primary-color;
+    font-size: 2rem;
+
+    h1 {
+        font-size: 4rem;
+    }
+
+}
+
+.content {
+    width: math.div(600px, 960px) * 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    gap: 1rem;
+    margin: 0 auto;
+
+    input {
+        padding: 8px 16px;
+    }
+
+    button {
+        padding: 8px 16px;
+    }
+}
